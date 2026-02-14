@@ -34,8 +34,10 @@
         "-e", "DISPLAY=${env:DISPLAY}"
     ],
     "mounts": [
-       "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
-       "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder}/src,target=/racerbot_ws/src,type=bind",
+        "source=racerbot_ws_build,target=/racerbot_ws/build,type=volume",
+        "source=racerbot_ws_install,target=/racerbot_ws/install,type=volume",
+        "source=racerbot_ws_log,target=/racerbot_ws/log,type=volume",
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /racerbot_ws/"
+    "postCreateCommand": "sudo rosdep update && rosdep install --from-paths src --ignore-src -y"
 }
