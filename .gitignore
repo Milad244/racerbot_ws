@@ -16,3 +16,8 @@ __pycache__/
 # External repositories to clone into src/
 src/f1tenth_gym_ros/
 src/racerbot_solutions/
+src/racerbot_utility/
+src/racerbot_a/
+src/racerbot_b/
+src/Racerbot-Car-1-Workspace/
+src/Racerbot-Car-2-Workspace/
