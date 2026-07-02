@@ -61,7 +61,7 @@ If you have already built your container just run: `docker start -ai racerbot`
 This workspace is designed for cloning packages into `racerbot_ws/src`.
 
 ### F1TENTH gym environment ROS 2 communication bridge
-To add and run the simulator in this workspace follow these [instructions](https://github.com/Milad244/racerbot-docs/blob/main/resources/F1TENTH_GYM_ROS.md).
+To add and run the simulator in this workspace follow these [instructions](https://github.com/sfu-racerbot/racerbot-docs/blob/main/resources/F1TENTH_GYM_ROS.md).
 
 ### Racerbot Solutions
 For the solutions to the RoboRacer labs and other learning projects clone the repository [Racerbot Solutions](https://github.com/sfu-racerbot/racerbot_solutions).
